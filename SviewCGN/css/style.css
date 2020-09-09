@@ -109,6 +109,14 @@ input, select {
   box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6,a {
+  font-family: 'Inconsolata', monospace;
+}
+
+p {
+  font-family: 'Catamaran', sans-serif;
+}
+
 /* ------------------ Style the body ------------------ */
 
 body {
@@ -163,7 +171,6 @@ body {
   padding: 15px 16px;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Inconsolata', monospace;
   font-weight: 300;
 }
 
@@ -216,9 +223,10 @@ body {
 
 .text_img {  
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  flex: 100%;
   align-items: center;
+  text-align: center;
   margin: 50px;
 }
 
@@ -226,19 +234,17 @@ body {
   position: relative;
   background-color: white;
   text-align: center;
-  padding: 50px;
+  padding-bottom: 25px;
 }
 
 .text_img_text h1{
   text-transform: uppercase;
-  font-family: 'Inconsolata', monospace;
   font-weight: 400;
   font-size: 35px;
   color: #222;
 }
 
 .text_img_text h2 {
-  font-family: 'Catamaran', sans-serif;
   font-weight: 300;
   font-size: 22px;
   color: #222;
@@ -246,7 +252,6 @@ body {
 
 .text_img_text p {
   text-transform: none;
-  font-family: 'Catamaran', sans-serif;
   font-weight: 200;
   font-size: 18px;
   line-height: 20px;
@@ -255,58 +260,93 @@ body {
 
 .text_img_img {
   position: relative;
-  margin: auto;
-
   text-align: center;
   background-color: white;
   align-items: center;
 }
 
 .text_img_img_img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 
+@media screen and (min-width: 1024px){
+
+  .text_img {  
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .text_img_text {
+    width: 400px;
+    padding: 0px;
+  }
+
+  .text_img_img {
+    width: 400px;
+  }
+}
+
+
 /* --------- tiles --> email,phone,instagram,instagram -------- */
-.tiles {  
-  display: flex;
-  flex-direction: column;
-  flex: 100%;
-  align-items: center;
-  margin: 50px 0px;
-  background-color: #222;
+
+.index-links{                                                                                       /*Index links boxes*/
+  padding: 20px;
+  overflow: hidden;
 }
 
-.tiles div {
-  position: relative;
-  text-align: center;
+.index-links div{
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 50px 0px;
+  height: auto;
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.tiles div h2{
-  border-bottom: .5px solid #eee;
+.index-links div h2{
+  font-size: 20px;
+  line-height: 35px;
   color: #eee;
-  max-width: 200px;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  text-transform: uppercase;
   text-align: center;
-}
-
-.tiles div a,p {
-  font-family: 'Inconsolata', monospace;
-  color: #eee;
-  max-width: 200px;
-  font-family: 'Inconsolata', monospace;
   font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  text-transform: lowercase;
-  text-align: center;
+  text-transform: uppercase;
 }
+
+.index-links div p{
+  font-size: 15px;
+  line-height: 20px;
+  color: #eee;
+  text-align: center;
+  font-weight: 200;
+  text-transform: lowercase;
+}
+
+.index-links a {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+  .index-links-start{
+      width: calc(50% - 22px) !important;
+      margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .index-links-start{
+      width: calc(25% - 22px) !important;
+      margin: 10px !important;
+  }
+}
+
 
 
 /* Footer */
@@ -317,7 +357,6 @@ body {
 }
 
 .footer a{
-  font-family: 'Inconsolata', monospace;
   font-weight: 400;
   font-size: 13px;
   color: #222
@@ -329,20 +368,27 @@ body {
 .impressum{
   margin: 50px;
   background-color: white;
+  text-align: center;
 }
 
 .impressum h1{
   color: #222;
-  font-family: 'Catamaran', sans-serif;
   line-height: 33px;
   font-size: 23px;
 }
 
 .impressum p{
   color: #555;
-  font-family: 'Catamaran', sans-serif;
   line-height: 20px;
   font-size: 18px;
+}
+
+@media screen and (min-width: 1024px){
+
+  .impressum{
+    text-align: left;
+  }
+
 }
 
 
@@ -353,19 +399,15 @@ body {
   margin: 50px;
   background-color: white;
   color: #555;
-  font-family: 'Catamaran', sans-serif;
   line-height: 20px;
   font-size: 18px;
 }
 
 .datenschutz h1, h2{
   color: #222;
-  font-family: 'Catamaran', sans-serif;
   line-height: 33px;
   font-size: 23px;
 }
-
-
 
 
 /*uebermich*/
@@ -378,7 +420,6 @@ body {
   border-radius: 5px;
   transition-duration: 0.2s;
   cursor: pointer;
-  font-family: 'Catamaran', sans-serif;
   color: #eee;
   line-height: 30px;
   font-size: 15px;
@@ -391,46 +432,97 @@ body {
 }
 
 
-
-
 /*kontakt*/
 
-.kontakt {  
-  display: flex;
-  flex-direction: column;
-  flex: 100%;
-  align-items: center;
-  margin: 50px 0px;
-  background-color: white;
+.index-kontakt{                                                                                       /*Index links boxes*/
+  padding: 20px;
+  overflow: hidden;
 }
 
-.kontakt div {
-  position: relative;
-  text-align: center;
+.index-kontakt div{
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 50px 0px;
+  height: auto;
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.kontakt div h2{
-  border-bottom: .5px solid #222;
-  color: #222;
-  max-width: 200px;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
+.index-kontakt div h2{
+  font-size: 20px;
+  line-height: 35px;
+  color: #eee;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.index-kontakt div p{
+  font-size: 15px;
+  line-height: 20px;
+  color: #eee;
+  text-align: center;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.index-kontakt a {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+  .index-kontakt-start{
+      width: calc(50% - 22px) !important;
+      margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .index-kontakt-start{
+      width: calc(33% - 22px) !important;
+      margin: 10px !important;
+  }
+}
+
+
+/*Preise*/
+
+.div_preis{
+  margin: 50px;
+  padding: 50px;
+  text-align: center;
+  background: white;
+}
+
+.div_preis h1{
   text-transform: uppercase;
   text-align: center;
-}
-
-.kontakt div a,p {
-  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+  font-size: 35px;
   color: #222;
-  max-width: 200px;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  text-transform: lowercase;
-  text-align: center;
 }
 
+.div_preis p{
+  text-transform: none;
+  text-align: center;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 20px;
+  color: #222;
+}
+
+
+@media screen and (max-width: 767px){
+
+  .div_preis{
+    padding: 50px 0px;
+  }
+
+}
