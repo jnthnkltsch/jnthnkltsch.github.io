@@ -110,11 +110,11 @@ input, select {
 }
 
 h1,h2,h3,h4,h5,h6,a {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 p {
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
 }
 
 /* ------------------ Style the body ------------------ */
