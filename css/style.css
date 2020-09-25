@@ -109,6 +109,81 @@ input, select {
   box-sizing: border-box;
 }
 
+/* ------------- Text ------------ */
+/*
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Eczar', serif;
+  font-family: 'Gentium Basic', serif;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Proza Libre', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Taviraj', serif;
+  font-family: 'Trirong', serif;
+  font-family: 'Work Sans', sans-serif;
+*/
+
+.fonts{
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Eczar', serif;
+  line-height: 40px;
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow: 1px 1px black;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Eczar', serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 35px;
+  color: #222;
+}
+
+h3 {
+  font-family: 'Eczar', serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #222;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+}
+
+h5 {
+  font-family: 'Rubik', sans-serif;
+}
+
+h6 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  color: #222;
+}
+
+p{
+  font-family: 'Eczar', serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 20px;
+  color: #222;
+}
+
+a{
+  font-family: 'Eczar', serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 20px;
+  color: #222;
+}
+
 /* Style the body */
 body {
   font-family: Arial;
@@ -125,14 +200,12 @@ body {
   }
 }
 
-/* Header/logo Title */
+/* ----------------------------------- Header/logo Title ----------------------------------- */
 .header {
   padding: 210px 0px 250px 0px;
   border-top: .5px solid #eee;
-  
   text-align: center;
   color: white;
-
   background-image: url("header_img.jpg");
   background-color: #555;
   height: 500px;
@@ -142,18 +215,7 @@ body {
   position: relative;
 }
 
-.header p{
-  line-height: 40px;
-  font-size: 40px;
-  font-family: 'Proza Libre', sans-serif;
-  font-weight: 500;
-  text-shadow: 1px 1px black;
-  text-transform: uppercase;
-  margin: 0px 50px;
-  padding: 10px 0px;
-}
-
-/* navigation bar */
+/* ----------------------------------- navigation bar ----------------------------------- */
 .topnav {
   overflow: hidden;
   background-color: #222;
@@ -162,12 +224,12 @@ body {
 .topnav a {
   float: left;
   display: block;
+  font-family: 'Work Sans', sans-serif;
   color: #fff;
   text-align: center;
   padding: 15px 16px;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Inconsolata', monospace;
   font-weight: 300;
 }
 
@@ -182,7 +244,7 @@ body {
   color: #eee;
   font-size: 22px;
   font-weight: 500;
-  padding: 14px 16px;
+  padding: 14px 16px 14px 32px;
 }
 
 .topnav .icon {
@@ -211,16 +273,14 @@ body {
   }
 }
 
-/* Column container */
-.row1 {  
+/* ----------------------------------- Main column ----------------------------------- */
+.textpicture {  
   display: flex;
   flex-wrap: wrap;
   margin: 25px;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.left1 {
+.text {
   flex: 50%;
   position: relative;
   background-color: white;
@@ -229,31 +289,7 @@ body {
   text-align: center;
 }
 
-.left1 h1{
-  text-transform: uppercase;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 400;
-  font-size: 35px;
-  color: #222;
-}
-
-.left1 h2 {
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 300;
-  font-size: 22px;
-  color: #222;
-}
-
-.left1 p {
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 20px;
-  color: #222;
-}
-
-/* Main column */
-.right1 {
+.picture {
   flex: 50%;
   position: relative;
   margin: auto;
@@ -268,77 +304,19 @@ body {
 }
 
 
-/* Column container */
-.row2 {  
-  display: flex;
-  flex-wrap: wrap;
-  margin: 100px 0px 25px 0px;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.left2, .left2_2, .right2, .right2_2 {
-  flex: 25%;
-  padding: 77px 0px;
-  height: 250px;
-  background-color: #222;
-  color: #eee;
-  text-align: center;
-  border: .5px solid white;
-  font-size: 15px;
-  font-family: 'Inconsolata', monospace;
-}
-
-.email, .twitter, .instagram, .phone{
-  border-bottom: .5px solid #eee;
-  color: white;
-  width: 200px;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 25px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 5px 0px;
-  overflow: hidden;
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,.1);
-  transition-duration: 0.1s;
-  margin: 0px auto;
-}
-
-.link_button{
-  color: #eee;
-}
-
-
-/* Footer */
+/* ----------------------------------- Footer ----------------------------------- */
 .footer {
   padding: 20px;
   text-align: center;
   background: white;
-  font-family: 'Inconsolata', monospace;
   font-weight: 300;
   font-size: 12px;
   color: #aaa
 }
 
-/* Responsive layout - when the screen is less than 1024px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 1024px wide*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .row1 {   
-    flex-direction: column !important;
+    flex-direction: column;
   }
-
-  .left2, .left2_2, .right2, .right2_2 {
-    flex: 50% !important;
-  }
-
-}
-
-/* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (min-width: 0px) and (max-width: 767px) {
-
-  .row1, .row2 {
-    flex-direction: column !important;
-  }
-
 }
