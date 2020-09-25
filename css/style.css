@@ -304,7 +304,7 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 1024px wide*/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 0px) and (max-width: 1023px) {
   .textpicture {   
     flex-direction: column;
   }
