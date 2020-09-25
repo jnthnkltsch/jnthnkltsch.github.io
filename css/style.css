@@ -303,6 +303,13 @@ body {
   height: auto;
 }
 
+/* Responsive layout - when the screen is less than 1024px wide*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .textpicture {   
+    flex-direction: column;
+  }
+}
+
 
 /* ----------------------------------- Footer ----------------------------------- */
 .footer {
@@ -312,11 +319,4 @@ body {
   font-weight: 300;
   font-size: 12px;
   color: #aaa
-}
-
-/* Responsive layout - when the screen is less than 1024px wide*/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .row1 {   
-    flex-direction: column;
-  }
 }
