@@ -155,6 +155,22 @@ body {
   width: auto;
 }
 
+@media screen and (min-width: 0px) and (max-width: 767px){
+  .header{
+
+    padding-top: 87.5px;
+    height: 350px;
+
+  }
+
+  .header img{
+    height: 175px;
+    width: auto;
+  }
+
+}
+
+
 /* --------------------- navigation bar -------------------- */
 
 .topnav {
