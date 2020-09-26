@@ -138,11 +138,11 @@ body {
 
 .header {
   padding-top: 100px;
-  border-bottom: .5px solid #eee;
+  border-bottom: .5px solid #000;
   text-align: center;
   color: white;
   background-image: url("header_img.jpg");
-  background-color: #555;
+  background-color: #eee;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
