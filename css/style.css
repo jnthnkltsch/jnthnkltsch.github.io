@@ -191,12 +191,12 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1920px;
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1921px) {
   .container {
-  margin-left: calc(calc(100% - 1600px)/2);
+  margin-left: calc(calc(100% - 1920px)/2);
   }
 }
 
@@ -324,7 +324,7 @@ body {
 
 
 
-/* ----- 404 ----- */
+/* --------------------------------------- 404 ------------------------------------ */
 .sitenotfound{
   width: 100%;
   text-align: center;
