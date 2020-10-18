@@ -110,18 +110,17 @@ input, select {
 }
 
 /* ------------- Text ------------ */
+
+
+
 /*
-  font-family: 'Cormorant Garamond', serif;
-  font-family: 'Eczar', serif;
-  font-family: 'Gentium Basic', serif;
-  font-family: 'Libre Baskerville', serif;
-  font-family: 'Libre Franklin', sans-serif;
-  font-family: 'Proza Libre', sans-serif;
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Taviraj', serif;
-  font-family: 'Trirong', serif;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
 */
+
+
 
 .fonts{
   width: 100%;
@@ -129,62 +128,59 @@ input, select {
 }
 
 h1 {
-  font-family: 'Eczar', serif;
-  line-height: 40px;
-  font-size: 40px;
-  font-weight: 500;
-  text-shadow: 1px 1px black;
+  font-family: 'IBM Plex Sans', bold;
   text-transform: uppercase;
+  line-height: 44px;
+  font-size: 42px;
 }
 
 h2 {
-  font-family: 'Eczar', serif;
+  font-family: 'IBM Plex Sans';
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 35px;
-  color: #222;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 h3 {
-  font-family: 'Eczar', serif;
-  font-weight: 300;
-  font-size: 22px;
-  color: #222;
+  font-family: 'IBM Plex Serif';
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
 }
 
 h4 {
-  font-family: 'Rubik', sans-serif;
+  /* not in use*/
 }
 
 h5 {
-  font-family: 'Rubik', sans-serif;
+  /* not in use*/
 }
 
 h6 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 200;
-  font-size: 14px;
+  font-family: 'IBM Plex Mono';
+  font-size: 12px;
   line-height: 16px;
-  color: #222;
+  font-weight: 300;
 }
 
 p{
-  font-family: 'Eczar', serif;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 20px;
-  color: #222;
+  font-family: 'IBM Plex Serif';
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 a{
-  font-family: 'Eczar', serif;
-  font-weight: 200;
+  font-family: 'IBM Plex Sans';
+  text-decoration: none;
   font-size: 18px;
-  line-height: 20px;
-  color: #222;
+  font-weight: 400;
 }
 
+
+
 /* Style the body */
+
 body {
   font-family: Arial;
   margin: 0;
@@ -201,6 +197,7 @@ body {
 }
 
 /* ----------------------------------- Header/logo Title ----------------------------------- */
+
 .header {
   padding: 210px 0px 250px 0px;
   border-top: .5px solid #eee;
@@ -216,6 +213,7 @@ body {
 }
 
 /* ----------------------------------- navigation bar ----------------------------------- */
+
 .topnav {
   overflow: hidden;
   background-color: #222;
@@ -224,17 +222,13 @@ body {
 .topnav a {
   float: left;
   display: block;
-  font-family: 'Work Sans', sans-serif;
   color: #fff;
   text-align: center;
   padding: 15px 25px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
+  float: right;
 }
 
 .topnav a:hover {
-  font-weight: 600;
   background-color: #eee;
   color: #222;
 }
@@ -242,10 +236,9 @@ body {
 .topnav a.active {
   background-color: #222;
   color: #eee;
-  font-size: 25px;
-  font-weight: 700;
   padding: 14px 25px;
   text-decoration: none;
+  float: left;
 }
 
 .topnav .icon {
@@ -275,6 +268,7 @@ body {
 }
 
 /* ----------------------------------- Main column ----------------------------------- */
+
 .textpicture {  
   display: flex;
   flex-wrap: wrap;
@@ -294,7 +288,6 @@ body {
   flex: 50%;
   position: relative;
   margin: auto;
-
   text-align: center;
   background-color: white;
 }
@@ -313,20 +306,40 @@ body {
 
 
 /* ----------------------------------- Footer ----------------------------------- */
+
 .footer {
   padding: 20px;
   text-align: center;
   background: white;
-  font-weight: 300;
-  font-size: 12px;
   color: #aaa
 }
 
 
 
 /* --------------------------------------- 404 ------------------------------------ */
+
 .sitenotfound{
   width: 100%;
   text-align: center;
   padding: 150px 0px;
+}
+
+
+
+/* ------------------------------------ Webdesign --------------------------------- */
+
+.webdesign_main{
+  width: 100%;
+}
+
+.webdesign_main_img{
+  float: left;
+  width: calc(50% - 0px);
+  background-color: darkred;
+}
+
+.webdesign_main_text{
+  float: left;
+  width: calc(50% - 0px);
+  background-color: teal;
 }
