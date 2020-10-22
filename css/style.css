@@ -149,11 +149,15 @@ h3 {
 }
 
 h4 {
-  /* not in use*/
+  font-family: 'IBM Plex Sans';
+  font-size: 32px;
+  font-weight: 400;
 }
 
 h5 {
-  /* not in use*/
+  font-family: 'IBM Plex Sans';
+  font-size: 28px;
+  font-weight: 300;
 }
 
 h6 {
@@ -167,7 +171,7 @@ p{
   font-family: 'IBM Plex Serif';
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 a{
@@ -226,6 +230,7 @@ body {
   text-align: center;
   padding: 15px 25px;
   float: right;
+  transition: 0.1s;
 }
 
 .topnav a:hover {
@@ -273,15 +278,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 25px;
+  background-color:white;
 }
 
 .text {
   flex: 50%;
   position: relative;
-  background-color: white;
   height: 500px;
   padding: 175px 10px 150px 10px;
   text-align: center;
+  color: #222;
 }
 
 .picture {
@@ -289,7 +295,6 @@ body {
   position: relative;
   margin: auto;
   text-align: center;
-  background-color: white;
 }
 
 .cologne_img {
@@ -328,18 +333,107 @@ body {
 
 /* ------------------------------------ Webdesign --------------------------------- */
 
-.webdesign_main{
+
+
+.webdesign_top{
+  background-color: rgb(232, 232, 232);
+  padding-bottom: 100px;
+}
+
+.webdesign_main_header{
   width: 100%;
+  padding: 100px 0px;
+  text-align: center;
+  color: #222;
+  background-color: rgb(232, 232, 232);
 }
 
-.webdesign_main_img{
-  float: left;
-  width: calc(50% - 0px);
-  background-color: darkred;
+.webdesign_row{
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+  padding-left: calc(12.5% - 3px);
 }
 
-.webdesign_main_text{
+.webdesign_column {
   float: left;
-  width: calc(50% - 0px);
-  background-color: teal;
+  width: 25%;
+  margin: 0px 2%;
+}
+
+.webdesign_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.webdesign_img{
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 1px 5px rgba(0,0,0,.06);
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+  .webdesign_row{
+    padding-left: 0px;
+  }
+
+  .webdesign_column {
+    width: calc(100% - 50px);
+    margin: 25px;
+  }
+
+}
+
+
+
+.text_img {  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+}
+
+.text_img_text {
+  position: relative;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.text_img_img {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  align-items: center;
+}
+
+.text_img_img_img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media screen and (min-width: 1024px){
+
+  .text_img {  
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .text_img_text {
+    width: 400px;
+    padding: 0px;
+  }
+
+  .text_img_img {
+    width: 400px;
+  }
 }
