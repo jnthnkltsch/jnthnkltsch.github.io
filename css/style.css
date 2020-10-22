@@ -203,13 +203,13 @@ body {
 /* ----------------------------------- Header/logo Title ----------------------------------- */
 
 .header {
-  padding: 210px 0px 250px 0px;
+  padding: 260px 0px 300px 0px;
   border-top: .5px solid #eee;
   text-align: center;
   color: white;
   background-image: url("header_img.jpg");
   background-color: #555;
-  height: 500px;
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
