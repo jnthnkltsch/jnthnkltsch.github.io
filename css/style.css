@@ -216,6 +216,13 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 160px 0px 200px 0px;
+    height: 400px;
+  }
+}
+
 /* ----------------------------------- navigation bar ----------------------------------- */
 
 .topnav {
