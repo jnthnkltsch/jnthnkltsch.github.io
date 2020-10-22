@@ -344,15 +344,7 @@ body {
 
 .webdesign_top{
   background-color: rgb(232, 232, 232);
-  padding-bottom: 100px;
-}
-
-.webdesign_main_header{
-  width: 100%;
   padding: 100px 0px;
-  text-align: center;
-  color: #222;
-  background-color: rgb(232, 232, 232);
 }
 
 .webdesign_row{
@@ -361,10 +353,23 @@ body {
   padding-left: calc(12.5% - 3px);
 }
 
-.webdesign_column {
+.webdesign_column_text_mobil {
+  display: none;
+}
+
+.webdesign_column_img {
   float: left;
   width: 25%;
-  margin: 0px 2%;
+  margin: 10px 2%;
+  text-align: center;
+}
+
+.webdesign_column {
+  display: block;
+  float: left;
+  width: 25%;
+  margin: 10px 2%;
+  text-align: center;
 }
 
 .webdesign_row::after {
@@ -391,8 +396,19 @@ body {
   }
 
   .webdesign_column {
+    display: none;
+  }
+
+  .webdesign_column_img {
+    width: calc(100% - 100px);
+    margin: 50px;
+  }
+
+  .webdesign_column_text_mobil {
+    display: block;
     width: calc(100% - 50px);
     margin: 25px;
+    text-align: center;
   }
 
 }
