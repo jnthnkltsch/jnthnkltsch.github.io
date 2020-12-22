@@ -138,7 +138,6 @@ body {
 
 .header {
   padding-top: 100px;
-  border-bottom: .5px solid #000;
   text-align: center;
   color: white;
   background-image: url("header_img.jpg");
@@ -177,54 +176,46 @@ body {
   overflow: hidden;
   background-color: #222;
   padding-left: calc(calc(100% - 540px)/2); 
+  border: 0.5px solid #000;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #fff;
+  color: #aaa;
   text-align: center;
   padding: 15px 16px;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 18px;
-  font-weight: 300;
 }
 
 .topnav a:hover {
-  background-color: #eee;
+  background-color: #ddd;
   color: #222;
   font-weight: 500;
 }
 
 .topnav a.active {
   background-color: #222;
-  color: #eee;
-  font-size: 22px;
-  font-weight: 500;
-  padding: 14px 16px;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 16px;
 }
 
 .topnav .icon {
   display: none;
-}
-
-@media screen and (min-width: 1024px){
-  .mobilnav{
-    display: none !important;
-  }
-
-  .mobilnavproduct{
-    display: block !important;
-  }
+  color: #eee !important;
+  background-color: #222 !important;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1023px){
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
-
+  
   .topnav{
     padding: 0px;
   }
@@ -244,10 +235,6 @@ body {
     text-align: left;
   }
 
-  .mobilnavproduct{
-    display: none !important;
-  }
-
 }
 
 
@@ -259,12 +246,26 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 50px;
+  margin: 0px;
+  padding: 50px;
+  background-color: #222;
+  color: #eee;
+}
+
+.text_img2 {  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+  padding: 50px;
+  background-color: #fff;
+  color: #222;
 }
 
 .text_img_text {
   position: relative;
-  background-color: white;
   text-align: center;
   padding-bottom: 25px;
 }
@@ -273,13 +274,11 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 35px;
-  color: #222;
 }
 
 .text_img_text h2 {
   font-weight: 300;
   font-size: 22px;
-  color: #222;
 }
 
 .text_img_text p {
@@ -287,13 +286,11 @@ body {
   font-weight: 200;
   font-size: 18px;
   line-height: 20px;
-  color: #222;
 }
 
 .text_img_img {
   position: relative;
   text-align: center;
-  background-color: white;
   align-items: center;
 }
 
@@ -308,6 +305,14 @@ body {
   .text_img {  
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: #fff;
+    color: #222;
+  }
+
+  .text_img2 {  
+    flex-direction: row;
+    justify-content: space-evenly;
+  
   }
 
   .text_img_text {
@@ -318,6 +323,7 @@ body {
   .text_img_img {
     width: 400px;
   }
+
 }
 
 
@@ -447,20 +453,20 @@ body {
 .insta_button button {
   width: auto;
   min-width: 165px;
-  background-color: #222; 
-  border: 1px solid white;
-  border-radius: 5px;
+  background-color: #aaa; 
+  border: 1.5px solid #222;
+  border-radius: 3px;
   transition-duration: 0.2s;
   cursor: pointer;
-  color: #eee;
+  color: #222;
   line-height: 30px;
   font-size: 15px;
 }
 
 .insta_button button:hover {
-  background-color: white;
-  color: #222;
-  border: 1px solid #222;
+  background-color: #555;
+  color: #eee;
+  border: 1.5px solid #bbb;
 }
 
 
@@ -650,10 +656,9 @@ body {
 /*Preise*/
 
 .div_preis{
-  margin: 50px;
   padding: 50px;
   text-align: center;
-  background: white;
+  background: #222;
 }
 
 .div_preis h1{
@@ -661,7 +666,7 @@ body {
   text-align: center;
   font-weight: 400;
   font-size: 35px;
-  color: #222;
+  color: #eee;
 }
 
 .div_preis p{
@@ -670,14 +675,6 @@ body {
   font-weight: 200;
   font-size: 18px;
   line-height: 20px;
-  color: #222;
+  color: #eee;
 }
 
-
-@media screen and (max-width: 767px){
-
-  .div_preis{
-    padding: 50px 0px;
-  }
-
-}
