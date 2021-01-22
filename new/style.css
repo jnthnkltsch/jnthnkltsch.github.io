@@ -21,7 +21,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
-    background-color: #222;
+    background-color: #eee;
 }
 
 article,aside,details,figcaption,figure,
@@ -130,7 +130,6 @@ input, select {
   h2 {
     font-family: 'IBM Plex Sans';
     text-transform: uppercase;
-    text-decoration: underline;
     font-size: 62px;
     font-weight: 600;
   }
@@ -198,13 +197,13 @@ input, select {
 /* ----------------------------------- Header/logo Title ----------------------------------- */
 
 .header {
-    padding: 98px 0px 98px 0px;
-    border-top: .5px solid #eee;
+    padding: 198px 0px 198px 0px;
+    border-bottom: 1px solid #000;
     text-align: center;
-    color: white;
+    color: #eee;
     background-image: url("header_img.jpg");
     background-color: #222;
-    height: 1000px;
+    height: 1200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,7 +225,7 @@ input, select {
     padding: 200px 0px;
     width: 600px;
     text-align: left;
-    color: #eee;
+    color: #222;
 }
 
 
@@ -256,5 +255,5 @@ input, select {
 .footer {
     padding: 500px 0px 300px 0px;
     text-align: center;
-    color: #aaa;
+    color: #555;
   }
